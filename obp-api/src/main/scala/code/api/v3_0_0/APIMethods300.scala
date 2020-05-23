@@ -1876,6 +1876,7 @@ trait APIMethods300 {
       entitlementRequestsJSON,
       List(
         UserNotLoggedIn,
+        UserNotSuperAdmin,
         InvalidConnectorResponse,
         UnknownError
       ),
@@ -1916,6 +1917,7 @@ trait APIMethods300 {
       entitlementRequestsJSON,
       List(
         UserNotLoggedIn,
+        UserNotSuperAdmin,
         InvalidConnectorResponse,
         UnknownError
       ),
@@ -1956,6 +1958,7 @@ trait APIMethods300 {
       entitlementRequestsJSON,
       List(
         UserNotLoggedIn,
+        UserNotSuperAdmin,
         InvalidConnectorResponse,
         UnknownError
       ),
@@ -1992,6 +1995,7 @@ trait APIMethods300 {
       emptyObjectJson,
       List(
         UserNotLoggedIn,
+        UserNotSuperAdmin,
         InvalidConnectorResponse,
         UnknownError
       ),
@@ -2033,6 +2037,7 @@ trait APIMethods300 {
       entitlementJSONs,
       List(
         UserNotLoggedIn,
+        UserNotSuperAdmin,
         InvalidConnectorResponse,
         UnknownError
       ),
@@ -2300,7 +2305,7 @@ trait APIMethods300 {
       """.stripMargin,
       emptyObjectJson,
       emptyObjectJson,
-      List(UserNotLoggedIn, EntitlementNotFound, UnknownError),
+      List(UserNotLoggedIn, UserNotSuperAdmin, EntitlementNotFound, UnknownError),
       Catalogs(notCore, notPSD2, notOBWG),
       List(apiTagScope, apiTagRole, apiTagEntitlement, apiTagNewStyle))
 
@@ -2339,7 +2344,7 @@ trait APIMethods300 {
       """.stripMargin,
       emptyObjectJson,
       scopeJsons,
-      List(UserNotLoggedIn, EntitlementNotFound, UnknownError),
+      List(UserNotLoggedIn, UserNotSuperAdmin, EntitlementNotFound, UnknownError),
       Catalogs(notCore, notPSD2, notOBWG),
       List(apiTagScope, apiTagRole, apiTagEntitlement, apiTagNewStyle))
   
